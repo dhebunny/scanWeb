@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/submitted.css">
+    <title>ScanMe</title>
+    <link rel="shortcut icon" type="image/png" href="static/images/lens logo.png">
+</head>
+<body>
+    <img class="lens" src="static/images/lens.png" alt="Lens image">
+    <img src="static/images/girl.jpg" alt="girl reading" class="girl">
+
+    <div class="container">
+        <h1>Submitted<span>Successfully</span></h1>
+        <p>Your message has been successfully, the team will get back to you within few hours.</p>
+        <img src="static/images/lens.png" alt="Lens image">
+        <a href="{{ url_for('splash') }}"><button class="btn", type="button"><span></span>Go Back</button></a>
+    </div>
+
+</body>
+</html>

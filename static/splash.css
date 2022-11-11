@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Bellota:wght@300;400;700&display=swap');
+
+body{
+
+    margin: 0;
+    background: #50423AA6;
+    
+}
+.lens{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -7.90%;
+    right: 74.24%;
+    top: -12%;
+    bottom: 60.81%;
+}
+.girl{
+    position: absolute;
+    width: 690px;
+    height: 661.88px;
+    left: 675px;
+    top: 0px;
+}
+.container{
+    position: absolute;
+    width: 1109px;
+    height: 600px;
+    left: 125px;
+    top: 35px;
+
+    background: rgba(132, 93, 74, 0.92);
+    opacity: 0.88;
+    border-radius: 59px;
+}
+.container p {
+    position: absolute;
+    width: 404px;
+    height: 90px;
+    left: 350px;
+    top: 273px;
+
+    font-family: 'Bellota';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+.container h1 {
+    position: absolute;
+    left: 200px;
+    top: -20px;
+
+    font-family: 'Bellota';
+    font-style: bold;
+    color: white;
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 226px;
+    letter-spacing: 0.08em;
+}
+span {
+    position: absolute;
+    left: 450px;
+    top: .005em;
+
+    font-family: 'Bellota';
+    font-style: light;
+    color: black;
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 226px;
+    letter-spacing: 0.08em;
+}
+img {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 27.19%;
+    right: 55.07%;
+    top: 27.47%;
+    bottom: 44.43%;
+
+    opacity: 0.86;
+}
+.btn {
+    position: absolute;
+    width: 257px;
+    height: 78px;
+    left: 420px;
+    top: 443px;
+    
+    border: none;
+    background: rgba(132, 93, 74, 0.92);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    color: #fff;
+    z-index: 1;
+
+    font-family: 'Bellota Text';
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    transition: 0.4s;
+    overflow: hidden;
+
+    cursor: pointer;
+    backdrop-filter: blur(15px);
+}
+.btn:hover {
+    letter-spacing: 2px;
+    border: none;
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0.15), transparent);
+    transform:  translateX(0);
+    transition: 0.5s;
+}
+.btn:hover::before{
+    transform: translateX(200%);
+}
+.btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 70px;
+    height: 15px;
+    background: #50423AA6;
+    border-radius: 5px;
+    transition: 0.5s;
+    z-index: 1;
+}
+.btn:hover::after{
+    /* width: 200px; */
+    transform: translateX(200%);
+}

@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Bellota:wght@300;400;700&display=swap');
+
+body{
+
+    margin: 0;
+    background: #845D4AEB;
+    
+}
+.contact-us{
+    position: absolute;
+    top: 3.4em;
+    margin-left: 40.4em;
+    border: none;
+    background: rgba(177, 84, 38, 0.801);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 8em;
+    height: 3em;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.contact-us:hover {
+    border: none;
+    background: #3E3530;
+    color: white; 
+}
+.lens{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -7.90%;
+    right: 74.24%;
+    top: -12%;
+    bottom: 60.81%;
+}
+.girl{
+    position: absolute;
+    width: 690px;
+    height: 661.88px;
+    left: 675px;
+    top: 0px;
+}
+.logo {
+    position: absolute;
+    left: 60px;
+    top: 40px;
+
+}
+.arrow {
+    opacity: 40%;
+    position: absolute;
+    top: 48%;
+    left: 5%;
+}
+.arrow:hover {
+    opacity: 100%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.section1 {
+    width: 395px;
+    position: absolute;
+    left: 170px;
+    top: 70px;
+    padding: 2px;
+    margin: 5px;
+    align-items: center;
+    text-align: left;
+
+}
+h1 {
+    font-family: 'Bellota Text';
+    font-weight: 700;
+    font-style: bold;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+p {
+    font-family: 'Bellota Text';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+/*Signup section*/
+.SignUp {
+    width: 28em;
+    height: 16em;
+    background: #D9D9D9;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: .01em;
+    padding-bottom: .8em;
+    z-index: 1;
+    overflow: hidden;
+}
+h2 {
+    font-family: 'Bellota Text';
+    font-weight: 700;
+    font-style: bold;
+    font-size: 40px;
+    margin-bottom: .1em;
+}
+label {
+    color: #000;
+    font-family: 'Bellota Text';
+    font-weight: 700;
+    font-style: bold;
+    font-size: 15px;
+    line-height: 35px;
+}
+.email {
+    width: 100px;
+    display: block;
+}
+.emailbox {
+    border: solid 2px #3E3530;
+    background: transparent;
+    border-radius: 8px;
+    width: 20em;
+    height: 2.4em;
+    padding-left: 15px;
+    outline: none;
+}
+.chkbox {
+    display: flex;
+}
+.agree {
+    font-size: 12px;
+}
+span {
+    text-decoration: underline;
+}
+.submit-btn {
+    border: none;
+    background: rgba(177, 84, 38, 0.95);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.submit-btn:hover {
+    border: none;
+    background: #3E3530;
+    color: white; 
+}
+
+.signup-btn {
+    position: relative;
+    border: none;
+    background: #3E3530;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    left: 310px;
+    bottom: 40px;
+    border-radius: 5px;
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+.signup-btn:hover {
+    border: none;
+    background: rgba(177, 84, 38, 0.95);
+    color: black; 
+}
+
+/*eyes roll*/
+.eyes {
+    position: relative;
+    width: 150px;
+    top: 32em;
+    left: 30px;
+    display: flex;
+
+}
+.eye {
+    position: relative;
+    width: 56px;
+    height: 60px;
+    background: rgb(15, 15, 15);
+    display: block;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+.eye::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 36px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+}
+
+/* popup section */
+.popup {
+    position: absolute;
+    left: 26%;
+    top: 19%;
+    width: 45%;
+    height: 60%;
+    background: #50423ad5;
+    border: 1px solid rgba(51, 39, 39, 0.233);
+    border-radius: 20px;
+    transform: scale(0.1);
+    padding-left: 2em;
+    visibility: hidden; /*hide popup*/
+    transition: transform 0.6s;
+}
+/*see the popup*/
+.open-popup{
+    visibility: visible;
+    transform: scale(1);
+}
+
+.header2 {
+    width: 50px;
+}
+.popup h2 {
+    color: #fff;
+    font-family: 'Bellota';
+    font-weight: 700;
+    font-size: 50px;
+    font-style: normal;
+    text-align: left;
+}
+.check{
+    color: rgba(255, 255, 255, 0.541);
+    margin-bottom: 5em;
+}
+.popup p {
+    color: rgba(255, 255, 255, 0.541);
+    margin-top: -3px;
+}
+
+/* others and resend section */
+.extra {
+    padding-top: 2em;
+    position: relative;
+    display: flex;
+}
+.other {
+    text-decoration: underline;
+}
+.other a {
+    opacity: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.other a:hover {
+    color: rgba(255, 255, 255, 0.90);
+    opacity: 100%;
+}
+.resend  {
+    margin-left: 58%;
+    text-decoration: underline;
+}
+.resend a {
+    color: #fff;
+    opacity: 50%;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.resend a:hover {
+    color: rgba(255, 255, 255, 0.90);
+    opacity: 100%;
+}
+
+/*continue button*/
+.btn-cont {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 30px;
+    width: 10em;
+    height: 3.2em;
+    align-content: center;
+
+    background: rgba(255, 255, 255, 0.92);
+    color: #000;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.4s;
+  
+}
+.btn-cont:hover{
+    background: rgba(179, 85, 38, 0.767);
+    color: #fff;
+}
+.btn-cont span {
+    font-family: 'Bellota Text';
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+
+}
+.btn-cont::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 50px;
+    height: 10px;
+    background: #50423AA6;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1;
+    transition: 0.8s;
+}
+.btn-cont:hover::after{
+    /* transform: translateX(200%); */
+    width: 100px;
+    background: rgba(0, 0, 0, 0.637);
+}
+
+/*blur background*/
+.section#blur.active{  /* '#' for editing 'id'*/
+    filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
+}

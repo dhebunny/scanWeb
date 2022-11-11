@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScanMe</title>
+    <link rel="stylesheet" href="static/scan.css">
+    <link rel="shortcut icon" type="image/png" href="static/images/lens logo.png">
+</head>
+<body>
+    <a href="{{ url_for( 'splash' ) }}"><img src="static/images/logo.png" alt="scan me Logo" class="logo"></a>
+    <img class="lens" src="static/images/lens.png" alt="Lens image">
+    <img class="book" src="static/images/book.png" alt="book image">
+    <a href="{{ url_for('splash') }}"><img class="arrow"src="static/images/back-arrow.png" alt="#"></a>
+
+    <div class="container">
+        <h2 class="title">Scan<span>now</span></h2>
+        <input class="url" type="text" placeholder="paste your url here" name="enter_url" id="url">
+        <input class="enter_txt" type="text" placeholder="paste your text here" name="enter_text" id="text">
+        <!-- set button -->
+        <input class="scan-btn" type="submit" value="Scan"/>
+    </div>
+</body>
+</html>

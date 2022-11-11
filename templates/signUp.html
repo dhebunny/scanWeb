@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScanMe</title>
+    <link rel="shortcut icon" type="image/png" href="static/images/lens logo.png">
+    <link rel="stylesheet" href="static/signUp.css">
+</head>
+<body>
+
+    <div class="section" id="sect">
+        <img class="lens" src="static/images/lens.png" alt="Lens image">
+        <a href="{{ url_for('home') }}"><img class="arrow"src="static/images/back-arrow.png" alt="#"></a>
+        <a href="{{ url_for('splash' )}}"><img src="static/images/logo.png" alt="scan me Logo" class="logo"></a>
+        
+        
+        <div class="container">
+            <h1>Sign<span>Up</span></h1>
+            <div class="borda-right"></div>
+            <div class="borda-left"></div>
+            <div class="signUp">
+                <form action="#" method="post" class="signup_fm">
+                    <div class="fn_box">
+                        <label for="fullname">Fullname</label>
+                        <input class="fn" type="text" name="f_name" placeholder="John Doe" id="f_name" required>
+                    </div>
+                    <div class="un-box">
+                        <label for="username">Username</label>
+                        <input class="un" type="text" name="u_name" placeholder="hooker001" id="u_name" required>
+                    </div>
+                    <div class="email-box">
+                        <label for="email">E-mail</label>
+                        <input class="email" type="email" name="mail" placeholder="example@gmail.com" id="mail" required>
+                    </div>
+                    <div class="pwd-box">
+                        <label for="password">Password</label>
+                        <input class="pwd" type="password" name="psd" id="pwd" required>
+                    </div>
+                    <div class="pwd_confirm-box">
+                        <label for="password">Confirm Password</label>
+                        <input class="conf_pwd" type="password" name="psd" id="pwd" required >
+                    </div>
+                    <div class="chkbox">
+                        <input type="checkbox" name="tick" id="checkbox" required/>
+                        <p class="agree">I agree to the <a href="#"><span>terms</span></a> & <a href="#"><span>privacy policy</span></a></p>
+                    </div>
+                    <input class="sign-btn" type="submit" value="Sign Up!" onclick="pop()"/>
+                </form>
+            </div>
+        </div>
+        <img class="boy" src="static/images/boy.png" alt="boy dancing">
+    </div>
+
+    <!-- popup message     -->
+    <div class="popup" id="popup">
+        <div class="header2">
+            <h2>Login Successful</h2>
+        </div>
+        <p>check your mail for the confirmation message</p>
+        <div class="extra">
+            <p class="other"><a href="#"> Other options</a></p>
+            <p class="resend"><a href="#">resend mail</a></p>
+        </div>
+        <button type="button" class="btn-cont" onclick="back()"><span>Go back</span></button>
+    </div>
+
+<!-- javascript -->
+    <script type="text/javascript">
+        /*popup*/
+        let popup = document.getElementById("popup"); 
+        function pop(){
+            // alert("Login Successfully ");
+            popup.classList.add("open-popup"); /*to open a class*/
+
+            var blur = document.getElementById('sect'); /*blur background*/
+            blur.classList.toggle('active')
+            
+        }
+
+        /*signup redirect*/
+        function back(){
+            window.location.assign("{{ url_for('home' )}}"); /*redirects to the signup page*/
+        }
+    </script>
+
+
+</body>
+</html>

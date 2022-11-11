@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Bellota:wght@300;400;700&display=swap');
+
+body{
+
+    margin: 0;
+    background: #845D4AEB;
+    
+}
+.lens{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -7.90%;
+    right: 74.24%;
+    top: -12%;
+    bottom: 60.81%;
+}
+.logo {
+    position: absolute;
+    left: 60px;
+    top: 40px;
+
+}
+.arrow {
+    opacity: 40%;
+    position: absolute;
+    top: 48%;
+    left: 5%;
+}
+.arrow:hover {
+    opacity: 100%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.boy{
+    position: absolute;
+    bottom: 2em;
+    left: 48em;
+    z-index: -1;
+}
+.container{
+    text-align: center;
+    width: 28em;
+    height: 34em;
+    margin-left: 23em;
+    margin-top: 4em;
+    border: none;
+    border-radius: 10px;
+    background: #ffffff75;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+h1{
+    font-family: 'Bellota Text';
+    font-size: 30px;
+    font-style: normal;
+    letter-spacing: 3px;
+    line-height: 1em;
+}
+span{
+    color: white;
+}
+.borda-right{
+    position: relative;
+    left: 25em;
+    top: 18em;
+    width: 8em;
+    height: 18em;
+    border: 1px solid #845D4AEB;
+    border-radius: 10px;
+    background: transparent;
+}
+.borda-left{
+    position: relative;
+    left: -5em;
+    bottom: 28em;
+    width: 8em;
+    height: 18em;
+    border: 1px solid #845D4AEB;
+    border-radius: 10px;
+    background: transparent;
+}
+
+/*signup section*/
+.signUp{
+    position: relative;
+    width: 20em;
+    height: 28em;
+    left: 4.2em;
+    bottom: 36.7em; 
+    border: 1px solid #845D4AEB;
+    border-radius: 10px;
+    background: transparent;
+    align-content: center;
+    justify-content: center;
+    display: block;
+    line-height: 2em;
+    z-index: 1;
+}
+label {
+    color: rgba(0, 0, 0, 0.623);
+    font-family: 'Bellota Text';
+    font-weight: 700;
+    font-style: bold;
+    font-size: 15px;
+    line-height: 30px;
+}
+.signup_fm{
+    position: relative;
+    top: 1em;
+    line-height: .1px;
+}
+
+/*fullname*/
+.fn_box{
+    position: relative;
+    left: .7em;
+    width: 300px;
+    display: block;
+}
+.fn{
+    border: 1px solid #845D4AEB;
+    background: transparent;
+    border-radius: 10px;
+    height: 2.5em;
+    width: 20em;
+    padding-left: 14px;
+    outline: none;
+}
+
+/*username*/
+.un-box{
+    position: relative;
+    left: .7em;
+    width: 300px;
+    display: block;
+}
+.un{
+    border: 1px solid #845D4AEB;
+    background: transparent;
+    border-radius: 10px;
+    height: 2.5em;
+    width: 20em;
+    padding-left: 14px;
+    outline: none;
+}
+
+/*email*/
+.email-box{
+    position: relative;
+    left: .7em;
+    width: 300px;
+    display: block;
+}
+.email{
+    border: 1px solid #845D4AEB;
+    background: transparent;
+    border-radius: 10px;
+    height: 2.5em;
+    width: 20em;
+    padding-left: 14px;
+    outline: none;
+}
+
+/*password*/
+.pwd-box{
+    position: relative;
+    left: .7em;
+    width: 300px;
+    display: block;
+}
+.pwd{
+    border: 1px solid #845D4AEB;
+    background: transparent;
+    border-radius: 10px;
+    height: 2.5em;
+    width: 20em;
+    padding-left: 14px;
+    outline: none;
+}
+
+/*confirm password*/
+.pwd_confirm-box{
+    position: relative;
+    left: .7em;
+    width: 300px;
+    display: block;
+}
+.conf_pwd{
+    border: 1px solid #845D4AEB;
+    background: transparent;
+    border-radius: 10px;
+    height: 2.5em;
+    width: 20em;
+    padding-left: 14px;
+    outline: none;
+}
+
+/*checkbox*/
+.chkbox{
+    line-height: 10px;
+    padding-left: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chkbox p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300px;
+}
+.chkbox a{
+    text-decoration: none;
+}
+
+/*button*/
+.sign-btn{
+    position: relative;
+    bottom: -1em;
+    left: .8em;
+    text-align: center;
+    border: none;
+    background: rgba(177, 84, 38, 0.95);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 7em;
+    height: 3em;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.4s;
+
+    font-family: 'Bellota Text';
+    font-style: bold;
+    font-weight: 700;
+    font-size: small;
+    line-height: 1px;
+}
+.sign-btn:hover{
+    border: none;
+    background: #3E3530;
+    color: white; 
+    letter-spacing: 2px;
+}
+
+/* popup section */
+.popup {
+    position: absolute;
+    left: 26%;
+    top: 19%;
+    width: 45%;
+    height: 60%;
+    background: #50423ad5;
+    border: 1px solid rgba(51, 39, 39, 0.233);
+    border-radius: 20px;
+    transform: scale(0.1);
+    padding-left: 2em;
+    visibility: hidden;  /*hide popup */
+    transition: transform 0.6s;
+}
+/*see the popup*/
+.open-popup{
+    visibility: visible;
+    transform: scale(1);
+}
+
+.header2 {
+    width: 50px;
+}
+.popup h2 {
+    color: #fff;
+    font-family: 'Bellota';
+    font-weight: 700;
+    font-size: 50px;
+    font-style: normal;
+    text-align: left;
+}
+.popup p {
+    font-family: 'Bellota';
+    color: rgba(255, 255, 255, 0.541);
+    margin-top: -1px;
+}
+
+/* others and resend section */
+.extra {
+    padding-top: 2em;
+    position: relative;
+    display: flex;
+}
+.other {
+    text-decoration: underline;
+}
+.other a {
+    opacity: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.other a:hover {
+    color: rgba(255, 255, 255, 0.90);
+    opacity: 100%;
+}
+.resend  {
+    margin-left: 58%;
+    text-decoration: underline;
+}
+.resend a {
+    color: #fff;
+    opacity: 50%;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.resend a:hover {
+    color: rgba(255, 255, 255, 0.90);
+    opacity: 100%;
+}
+
+/*continue button*/
+.btn-cont {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 30px;
+    width: 10em;
+    height: 3.2em;
+    align-content: center;
+
+    background: rgba(255, 255, 255, 0.705);
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: none;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.4s;
+  
+}
+.btn-cont:hover{
+    background: rgba(179, 85, 38, 0.767);
+    color: #fff;
+}
+.btn-cont span {
+    font-family: 'Bellota Text';
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+
+}
+.btn-cont::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 50px;
+    height: 10px;
+    background: #50423AA6;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1;
+    transition: 0.8s;
+}
+.btn-cont:hover::after{
+    /* transform: translateX(200%); */
+    width: 100px;
+    background: rgba(0, 0, 0, 0.637);
+}
+
+/*blur background*/
+.section#sect.active{  /* '#' for editing 'id'*/
+    filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
+}

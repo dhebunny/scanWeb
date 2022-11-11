@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScanMe</title>
+    <link rel="shortcut icon" type="image/png" href="static/images/lens logo.png">
+    <link rel="stylesheet" href="static/home.css">
+</head>
+<body>
+    <!-- body -->
+    <div class="section" id="blur">
+        <nav><a href="{{ url_for('contact')}}"><input class="contact-us" type="button" value="Contact Us"></input></a></nav>
+
+        <a href="{{ url_for('splash') }}"><img class="arrow"src="static/images/back-arrow.png" alt="#"></a>
+        <img class="lens" src="static/images/lens.png" alt="Lens image">
+        <img src="static/images/girl.jpg" alt="girl reading" class="girl">
+        <a href="{{ url_for('splash' )}}"><img src="static/images/logo.png" alt="scan me Logo" class="logo"></a>
+<!-- section1 -->
+        <div class="section1">
+            <h1>Read the Terms in CliffNote Style</h1>
+            <p>No one reads lengthy terms and condition but some times they include dubious stipulations that you should know about</p>
+            <div class="SignUp">
+                <form action="" class="form">
+                    <h2>Test us TODAY!!!</h2>
+                    <div class="email">
+                        <label for="loginUser">Email Address</label>
+                        <input class="emailbox" type="text" placeholder="example@gmail.com" name="loginUser" id="email" required/>
+                        
+                    </div>
+                    <div class="chkbox">
+                        <input type="checkbox" name="tick" id="checkbox" required/>
+                        <p class="agree">I agree to the <a href="#"><span>terms</span></a> & <a href="#"><span>privacy policy</span></a></p>
+                    </div>
+                    <input class="submit-btn" type="submit" value="Sign In!" onclick="openPopup()"/>
+                    
+                </form>
+                <input class="signup-btn" type="submit" value="Sign Up!" onclick="signup()"/>
+            </div>
+        </div>
+<!-- eyes -->
+        <div class="eyes">
+            <div class="eye"></div>
+            <div class="eye"></div>
+        </div>
+    </div>
+<!-- popup message     -->
+    <div class="popup" id="popup">
+        <div class="header2">
+            <h2>Login Successful</h2>
+        </div>
+        <p>We've missed you, Welcome Back</p>
+        <div class="extra">
+            <p class="other"><a href="#"> Other options</a></p>
+            <p class="resend"><a href="#">resend mail</a></p>
+        </div>
+        <button type="button" class="btn-cont" onclick="auth()"><span> Continue</span></button>
+    </div>
+
+    <script type="text/javascript">
+        /*popup*/
+        let popup = document.getElementById("popup"); 
+        function openPopup(){
+            // alert("Login Successfully ");
+            popup.classList.add("open-popup"); /*to open a class*/
+
+            var blur = document.getElementById('blur'); /*blur background*/
+            blur.classList.toggle('active')
+            
+        }
+
+        /*onclick*/
+        function auth(){
+            window.location.assign("{{ url_for('scan' )}}"); /*to redirect to another page*/
+        }
+
+        /*eyeballs*/
+        document.querySelector('body').addEventListener('mousemove', eyeball); function eyeball(){
+            var eye = document.querySelectorAll('.eye');
+            eye.forEach(function(eye){
+                let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2)
+                let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2)
+                let radian = Math.atan2(event.pageX - x, event.pageY - y);
+                let rot = (radian * (180 / Math.PI) * -1) + 270;
+                eye.style.transform = "rotate("+ rot+"deg)"
+            })
+        }
+
+        /*signup redirect*/
+        function signup(){
+            window.location.assign("{{ url_for('signUp' )}}"); /*redirects to the signup page*/
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Bellota:wght@300;400;700&display=swap');
+
+body{
+
+    margin: 0;
+    padding: 0;
+    background: #845D4AEB;
+    
+}
+.lens{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -7.90%;
+    right: 74.24%;
+    top: -12%;
+    bottom: 60.81%;
+}
+.logo {
+    position: absolute;
+    left: 60px;
+    top: 40px;
+
+}
+.arrow {
+    opacity: 40%;
+    position: absolute;
+    top: 48%;
+    left: 5%;
+}
+.arrow:hover {
+    opacity: 100%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.container{
+    width: 40em;
+    height: 30em;
+    margin-left: 23em;
+    margin-top: 6em;
+    border: none;
+    border-radius: 10px;
+    background: #ffffff75;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+.borda-right{
+    position: relative;
+    left: 35em;
+    top: 16em;
+    width: 10em;
+    height: 10em;
+    border: 1px solid #845D4AEB;
+    border-radius: 10px;
+    background: transparent;
+}
+.borda-left{
+    position: relative;
+    left: -5em;
+    bottom: 18em;
+    width: 10em;
+    height: 10em;
+    border: 1px solid #845D4AEB;
+    border-radius: 10px;
+    background: transparent;
+}
+h1{
+    position: relative;
+    top: 3px;
+    font-family: 'Bellota Text';
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*form section*/
+.form-section{
+    position: relative;
+    width: 32em;
+    height: 22em;
+    left: 4.2em;
+    bottom: 20em;
+    border: 1px solid #845D4AEB;
+    border-radius: 10px;
+    background: transparent;
+    align-content: center;
+    display: block;
+    line-height: 2em;
+    z-index: 1;
+}
+.formbx{
+    position: relative ;
+    padding-top: 1.6em;
+    padding-left: 2em;
+    height: 100em;
+}
+.emailbox{
+    width: 120px;
+    display: block;
+}
+.mail{
+    border: solid 1px #3E3530;
+    background: transparent;
+    border-radius: 8px;
+    width: 20em;
+    height: 2.4em;
+    padding-left: 15px;
+    outline: none;
+}
+.sub-box{
+    width: 100px;
+    display: block;
+}
+.subj{
+    border: solid 1px #3E3530;
+    background: transparent;
+    border-radius: 8px;
+    width: 20em;
+    height: 2.4em;
+    padding-left: 15px;
+    outline: none;
+}
+.msg-box{
+    width: 100px;
+    height: 100em;
+    display: block;
+}
+.msg{
+    border: solid 1px #3E3530;
+    background: transparent;
+    border-radius: 8px;
+    width: 20em;
+    height: 8em;
+    padding-left: 15px;
+    outline: none;
+}
+.send-btn{
+    position: relative;
+    bottom: 5.8em;
+    left: 24em;
+    text-align: center;
+    border: none;
+    background: rgba(177, 84, 38, 0.95);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 7em;
+    height: 3em;
+    cursor: pointer;
+}
+label{
+    color: #000;
+    font-family: 'Bellota Text';
+    font-weight: 700;
+    /* font-weight: 300; */
+    font-style: bold;
+    font-size: 18px;
+}

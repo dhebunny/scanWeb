@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScanMe</title>
+    <link rel="shortcut icon" type="image/png" href="static/images/lens logo.png">
+    <link rel="stylesheet" href="static/contact.css">
+</head>
+<body>
+    
+    <a href="{{ url_for('home') }}"><img class="arrow"src="static/images/back-arrow.png" alt="#"></a>
+    <img class="lens" src="static/images/lens.png" alt="Lens image">
+    <a href="{{ url_for('splash' )}}"><img src="static/images/logo.png" alt="scan me Logo" class="logo"></a>
+
+    <div class="container">
+            <h1>CONTACT US</h1>
+            <div class="borda-right"></div>
+            <div class="borda-left"></div>
+            <div class="form-section">
+                <form action="submit_form" method="post" class="formbx">
+                    <div class="emailbox">
+                        <label for="sender">Email Address</label>
+                        <input class="mail" type="email" name="email" placeholder="example@gmail.com" id="email" required>
+                    </div>
+                    <div class="sub-box">
+                        <label for="subject">Subject</label>
+                        <input class="subj" type="text" name="subject" placeholder="Enter Subject" id="subject" >
+                    </div>
+                    <div class="msg-box">
+                        <label for="message">Message</label>
+                        <input class="msg" type="text" name="message" placeholder="Enter Message" id="message" required>
+                        <a href="home"><input class="send-btn" type="submit" value="Send"/></a>
+                    </div>
+                </form>
+            </div>
+    </div>
+
+
+</body>
+</html>

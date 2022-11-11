@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Bellota:wght@300;400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #845D4AEB;
+}
+.lens{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -7.90%;
+    right: 74.24%;
+    top: -12%;
+    bottom: 60.81%;
+}
+.logo {
+    position: absolute;
+    left: 60px;
+    top: 40px;
+}
+.book {
+    position: absolute;
+    left: 22%;
+    top: 16%;
+    width: 60%;
+    height: 70%;
+}
+.arrow {
+    opacity: 100%;
+    position: absolute;
+    top: 48%;
+    left: 5%;
+}
+.arrow:hover {
+    opacity: 100%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.container {
+    line-height: 4em;
+    box-sizing: border-box;
+    position: relative;
+    background: rgba(62, 53, 48, 0.83);
+    display: block;
+    padding-left: 40px;
+    left: 22em;
+    top: 6em;
+    width: 40em;
+    height: 30em;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.title {
+    letter-spacing: 2px;
+    left: 38%;
+    color: white;
+    font-family: 'Bellota';
+    font-style: normal;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 0px;
+}
+span {
+    color: black;
+}
+.url {  
+  
+    font-family: 'Bellota';
+
+    padding-left: 10px;
+    width: 30em;
+    height: 4.2em;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    outline: none;
+}
+.enter_txt {
+    font-family: 'Bellota';
+
+    padding-left: 10px;
+    padding-top: 2px;
+    width: 36em;
+    height: 12em;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    outline: none;
+}
+/* create button */
+.scan-btn{
+    position: absolute;
+    bottom: 4em;
+    left: 21em;
+    text-align: center;
+    border: none;
+    background: rgba(177, 84, 38, 0.95);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 7.5em;
+    height: 3.5em;
+    cursor: pointer;
+}
