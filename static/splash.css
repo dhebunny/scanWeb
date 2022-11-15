@@ -148,3 +148,101 @@ img {
     /* width: 200px; */
     transform: translateX(200%);
 }
+
+/* tablet screen size */
+@media (max-width: 768px) {
+    body{
+        /* padding: 10px; */
+    } 
+    .lens{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: -5.88%;
+        right: 74.24%;
+        top: -4.8%;
+        bottom: 60.81%;
+    }
+    .girl{
+        position: absolute;
+        width: 300px;
+        height: 270px;
+        left: 98px;
+        top: 30px;
+        border-radius: 12px;
+    }
+    .container{
+        position: relative;
+        width: 420px;
+        height: 400px;
+        left: 40px;
+        top: 180px;
+    
+        background: rgba(132, 93, 74, 0.92);
+        opacity: 0.88;
+        border-radius: 30px;
+        overflow: hidden; 
+        justify-content: center;
+        align-items: center;
+    }
+    .container h1 {
+        position: absolute;
+        left: 50px;
+        top: -50px;
+    
+        font-family: 'Bellota';
+        font-style: bold;
+        color: white;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 220px;
+        letter-spacing: 0.08em;
+    }
+    span {
+        position: absolute;
+        left: 2.6em;
+        top: .005em;
+    
+        font-family: 'Bellota';
+        font-style: light;
+        color: black;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 226px;
+        letter-spacing: 0.08em;
+    }
+    .container p {
+        position: absolute;
+        width: 205px;
+        height: 90px;
+        left: 110px;
+        top: 150px;
+    
+        font-family: 'Bellota';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+    img {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        left: 23.6%;
+        right: 55.07%;
+        top: 25.60%;
+    
+        opacity: 0.86;
+    }
+    .btn {
+        position: absolute;
+        width: 200px;
+        height: 68px;
+        left: 115px;
+        top: 280px;
+        
+        font-size: 28px;
+    }
+}
